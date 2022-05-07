@@ -1,0 +1,23 @@
+###
+GET http://localhost:3000/api/tasks
+###
+GET http://localhost:3000/api/tasks?page=0&size=2
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title":"hacer un sitio web en nodejs",
+    "description": "trabajo de empresa"
+}
+###
+GET  http://localhost:3000/api/tasks/61fdc2c2b286f866cc007237
+###
+DELETE http://localhost:3000/api/tasks/61fdc2c2b286f866cc007237
+###
+PUT http://localhost:3000/api/tasks/61fdcd21a4bafadeeb4d9de4
+Content-Type: application/json
+
+{
+    "title":"hacer un sitio web en javascript"
+}
